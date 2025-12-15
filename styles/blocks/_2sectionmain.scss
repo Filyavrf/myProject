@@ -1,0 +1,109 @@
+.sectionmain{
+    padding: 30px;
+    height: 900px;
+
+    @include tablet{
+        height: auto;
+    }
+
+    @include mobile{
+        padding: 15px;
+        height: auto;
+    }
+
+    &__body{
+        display: flex;
+        height: 100%;
+        
+    }
+
+    &__logo{
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        @include square(450px);
+        
+        @include desktop{
+            @include square(350px);
+        }
+
+        @include tablet{
+            @include square(300px);
+        }
+        
+        @include mobile{
+            @include square(250px);
+        }
+    }
+
+   
+    
+    &__item{
+        display: flex;
+
+        color: white;
+
+        &:not(:last-child) {
+      margin-bottom: 70px;}
+    }
+
+    &__link{
+        width: 100%;
+        position: relative;
+        color:var(--color-grey-light);
+        padding-inline: 30px;
+
+        
+        &-label{
+            font-size: 26px;
+            font-weight:600;
+            @include flex-center;
+            padding-inline: 20px;
+            
+            
+
+        }
+
+        &-icon-wrapper{
+        @include flex-center;
+        @include square(41px);
+
+        background-color: currentColor;
+        border-radius: 50%;
+
+        svg {
+        color: var(--color-tpu-green);
+        }
+        }
+
+        @include hover {
+        &::after {
+          width: 100%;
+        }
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 110%;
+            left: 50%;
+            translate: -50%;
+            width: 0;
+            height: 2px;
+            background-color: var(--color-tpu-green);
+            transition-duration: inherit;
+        }
+        @include mobile{
+                padding-left: 0;
+            }
+        
+    }
+
+    &__description{
+        color: var(--color-grey-light);
+        padding: 20px;
+        @include fluid-text(25,14);
+
+
+    }
+}

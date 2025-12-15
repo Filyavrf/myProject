@@ -1,0 +1,17 @@
+.header2{
+    
+    &__inner{
+        @include flex-center;
+        height: 200px;
+        background-color: var(--color-dark);
+
+        @include tablet{
+            height: 150px;
+        }
+    }
+
+    &__title{
+        @include fluid-text(60,30);
+        color: var(--color-tpu-green);
+    }
+}

@@ -1,0 +1,31 @@
+.header{
+    
+    &__inner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+        background-color: var(--color-grey-light);
+        border: var(--border);
+        border-radius: var(--border-radius-small);
+        box-shadow: 2px 3px 1px black;
+        @include tablet {
+            margin: 20px;
+        }
+
+    }
+
+    &__title{
+        padding: 30px;
+        
+        @include tablet {
+            padding: 20px;
+            font-size: 35px;
+        }
+
+        @include mobile {
+            font-size: 20px;
+        }
+    }
+
+}

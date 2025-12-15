@@ -1,0 +1,15 @@
+@import
+  'normalize',
+  'fonts',
+  'mixins',
+  'media',
+  'variables',
+  'utils',
+  'globals';
+
+@import 
+  './pages/page1',
+  './pages/page2',
+  './pages/page3',
+  './pages/page4';
+  

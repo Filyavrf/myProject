@@ -1,0 +1,13 @@
+.footer4{
+    display: flex;
+    height: 200px;
+    background-color: #5f0dee;
+    
+    
+    &__author{
+        margin: auto;
+        color: white;
+        font-weight: 800;
+        font-size: 25px;
+    }
+}

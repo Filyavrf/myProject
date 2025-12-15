@@ -1,0 +1,40 @@
+.content2{
+    
+    
+    &__body{
+        position: relative;
+        padding: 30px;
+        height: 800px;
+        overflow: hidden;
+
+        @include tablet{
+            height: 600px;
+            padding-top: 10px;
+        }
+
+        @include mobile{
+            height: 450px;
+            padding-inline: 10px;
+        
+        }
+    }
+    
+    &__bg-text{
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        font-family: var(--font-famly-bg);
+        
+        @include fluid-text(50,30);
+        color: var(--color-grey);
+        opacity: 0.2;
+    }
+
+    &__image{
+        z-index: 2;
+        scale: 0.6;
+        @include abs-center;
+    }
+}

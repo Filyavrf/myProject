@@ -1,0 +1,31 @@
+.footer{
+    
+    &__inner{
+        display: flex;
+        justify-content:right;
+        align-items: center;
+        margin: 100px 30px 20px 30px;
+        background-color: var(--color-grey-light);
+        border: var(--border);
+        border-radius: var(--border-radius-small);
+        box-shadow: 2px 3px 1px black;
+
+        @include mobile{
+            margin-top: 20px;
+        }
+    }
+
+    &__list{
+        @include flex-center;
+        padding-block: 20px;
+        gap: 10px;
+        padding-right: 20px;
+    }
+    
+    &__item{
+        position: relative;
+        top:3px;
+    }
+    
+    
+}

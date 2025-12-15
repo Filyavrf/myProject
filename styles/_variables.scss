@@ -1,0 +1,42 @@
+:root{
+    --color-black: #000000;
+    --color-dark:#3f3b3b;
+    --color-blue-grey: #3d5a68;
+    --color-purple-light: #bc8fd6;
+    --color-grey: #bbbbbb;
+    --color-grey-light: #F0F7EE;
+    --color-grey-light2: #bbcac3;
+    --color-tpu-green: rgb(40,190,70);
+
+    
+
+    --border:1px solid var(--color-black);
+    --border-radius: 30px;
+    --border-radius-small: 7px;
+
+    --shadow-default: 4px 4px 0 var(--color-black);
+
+    --font-family-base:'Space Grotesk', sans-serif;
+    --font-famly-bg:'Inter 18pt', sans-serif;
+    --card-padding-x: 30px;
+
+    --button-link-height: 70px;
+
+    --transition-duration: 0.2s;
+
+    --box-shadow: -12px -12px 12px hsla(0, 0%, 100%, .32), 12px 12px 12px rgba(0, 0, 0, .32);
+        --box-shadow-2: -4px -4px 12px hsla(0, 0%, 100%, .8), 4px 4px 12px black;
+        --box-shadow-3: -4px -4px 12px hsla(0, 0%, 100%, .05), 4px 4px 12px black;
+        --box-shadow-3-transparent: -4px -4px 12px hsla(0, 0%, 100%, 0), 4px 4px 12px transparent;
+        --box-shadow-4: -8px -8px 12px hsla(0, 0%, 100%, .8), 8px 8px 12px rgba(0, 0, 0, .05);
+        --box-shadow-4-transparent: -8px -8px 12px hsla(0, 0%, 100%, 0), 8px 8px 12px transparent;
+        --box-shadow-5: -4px -4px 12px hsla(0, 0%, 100%, .05), 4px 4px 12px #ae8bf8;
+        --box-shadow-6: -4px -4px 12px hsla(0, 0%, 100%, .05), 4px 4px 20px rgba(0, 0, 0, .25);
+        --box-shadow-inset: inset -22px -14px 14px 2px hsla(0, 0%, 100%, .015), inset 8px 4px 20px 12px rgba(0, 0, 0, .8);
+        --box-shadow-inset-transparent: inset -22px -14px 14px 2px hsla(0, 0%, 100%, 0), inset 8px 4px 20px 12px transparent;
+        --box-shadow-inset-2: inset -2px -2px 4px hsla(0, 0%, 100%, .1), inset 2px 2px 4px rgba(0, 0, 0, .5);
+        --box-shadow-inset-2-transparent: inset -2px -2px 4px hsla(0, 0%, 100%, 0), inset 2px 2px 4px transparent;
+    --shadowBefore: var(--box-shadow-6), var(--box-shadow-inset-transparent);
+    --shadowAfter: var(--box-shadow-3-transparent), var(--box-shadow-inset-2);
+
+}

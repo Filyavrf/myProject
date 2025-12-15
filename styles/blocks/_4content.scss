@@ -1,0 +1,44 @@
+.content4{
+    width: 770px;
+    margin: 100px auto 50px;
+    font-size: 0;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+    gap: 50px;
+
+    @include tablet{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+    &__card{
+
+        display: flex;
+        flex-direction: column;
+        
+        width: 360px;
+        border: 1px solid black;
+        padding: 25px 25px 30px;
+        box-shadow: 4px 4px 0 black;
+
+        &-image{
+            width: 100%;
+            margin-bottom: 20px;
+            border: 1px solid black;
+        }
+
+        &-title{
+            margin-bottom: 10px;
+            font-weight: 800;
+            font-size: 31px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        &-text{
+            font-size: 18px;
+        }
+
+        
+    }
+}
