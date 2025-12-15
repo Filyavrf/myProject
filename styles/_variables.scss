@@ -7,6 +7,8 @@
     --color-grey-light: #F0F7EE;
     --color-grey-light2: #bbcac3;
     --color-tpu-green: rgb(40,190,70);
+    --color-dark-2: #191820;
+    --color-pink-light: #ae8bf8;
 
     
 
@@ -36,7 +38,7 @@
         --box-shadow-inset-transparent: inset -22px -14px 14px 2px hsla(0, 0%, 100%, 0), inset 8px 4px 20px 12px transparent;
         --box-shadow-inset-2: inset -2px -2px 4px hsla(0, 0%, 100%, .1), inset 2px 2px 4px rgba(0, 0, 0, .5);
         --box-shadow-inset-2-transparent: inset -2px -2px 4px hsla(0, 0%, 100%, 0), inset 2px 2px 4px transparent;
-    --shadowBefore: var(--box-shadow-6), var(--box-shadow-inset-transparent);
-    --shadowAfter: var(--box-shadow-3-transparent), var(--box-shadow-inset-2);
-
+        --shadowBefore: var(--box-shadow-6), var(--box-shadow-inset-transparent);
+        --shadowAfter: var(--box-shadow-3-transparent), var(--box-shadow-inset-2);
+        
 }

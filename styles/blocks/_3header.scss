@@ -1,0 +1,15 @@
+.header3{
+    height: 100vh;
+    @include flex-center;
+
+    &__inner{
+        @include flex-center;
+        
+        margin: 60px 90px;
+        height: 150px;
+    }
+
+    &__label{
+        @include fluid-text(64,38);
+    }
+}

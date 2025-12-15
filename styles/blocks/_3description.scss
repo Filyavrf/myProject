@@ -1,0 +1,73 @@
+.description{
+
+    &__title{
+        padding:100px 130px;
+        @include desktopmax{
+            padding: 100px 100px;
+        }
+        @include desktop{
+            padding: 60px 70px;
+        }
+        @include mobile{
+            padding: 60px 20px;
+        }
+    }
+
+    &__text{
+        @include fluid-text(48,16);
+    }
+
+    &__list{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 60px;
+        padding-inline: 100px;
+        
+        @include desktopmax{
+            padding-inline: 50px;
+        }
+        @include desktop{
+            padding-inline: 40px;
+            gap: 40px;
+        }
+        @include tablet{
+            grid-template-columns: repeat(1,1fr);
+            gap: 80px;
+        }
+    }
+
+    &__item{
+        
+        
+        &-line{
+            border-right: 1px solid white;
+            @include tablet{
+                border-right: 0;
+            }
+        }
+    }
+
+    &__card{
+        margin-right: 60px;
+
+        &-label{
+            margin-bottom: 30px;
+            text-align: center;
+            @include fluid-text(32,24);
+            @include mobile{
+                margin-bottom: 15px;
+            }
+        }
+
+        @include desktop{
+            margin-right: 30px;
+        }
+
+        &-text{
+            text-align: center;
+
+            @include fluid-text(24,16);
+        }
+    }
+
+}
