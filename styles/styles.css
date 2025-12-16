@@ -303,6 +303,16 @@ body {
   background-color: white;
 }
 
+.contentbody5 {
+  color: var(--color-grey-light);
+  background-color: #3f3b3b;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
 a,
 button,
 input,
@@ -1183,4 +1193,98 @@ h4, .h4 {
   color: white;
   font-weight: 800;
   font-size: 25px;
+}
+
+.header5__label {
+  padding-left: 15px;
+  padding-block: 30px;
+}
+
+.content5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.content5__cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 900px;
+  height: 760px;
+  position: relative;
+  margin: 0 auto;
+}
+@media (max-width: 1600px) {
+  .content5__cont {
+    width: 800px;
+    height: 660px;
+  }
+}
+@media (max-width: 1280px) {
+  .content5__cont {
+    width: 700px;
+    height: 560px;
+  }
+}
+@media (max-width: 1023px) {
+  .content5__cont {
+    width: 600px;
+    height: 460px;
+  }
+}
+@media (max-width: 767px) {
+  .content5__cont {
+    width: 500px;
+    height: 360px;
+  }
+}
+.content5__image {
+  position: absolute;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.content5__description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-block: 30px;
+  font-size: 30px;
+  font-weight: bolder;
+}
+.content5__description-phrase::after {
+  content: url("/images/page-5/cursor.gif");
+}
+.content5__button {
+  height: 80px;
+  width: 200px;
+  font-size: 20px;
+  color: inherit;
+  background-color: #3f3b3b;
+  border: 1px solid rgb(95, 95, 95);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadowBefore);
+}
+@media (hover: hover) {
+  .content5__button:hover {
+    box-shadow: var(--shadowAfter);
+  }
+}
+@media (hover: none) {
+  .content5__button:active {
+    box-shadow: var(--shadowAfter);
+  }
+}
+.content5__button-inner {
+  font-size: 26px;
+}
+
+.footer5 {
+  translate: 15vw;
+  font-size: 26px;
+  font-weight: bolder;
 }/*# sourceMappingURL=styles.css.map */
