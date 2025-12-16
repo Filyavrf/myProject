@@ -1,5 +1,38 @@
 .threeriders{
+    @keyframes fade-left{
+        from {
+            translate:-20vw;
+            opacity: 0;
+        }
+    }
 
+    @keyframes fade-bottom{
+        from{
+            translate: 0 20vw;
+            opacity: 0;
+        }
+    }
+
+    @keyframes fade-right{
+        from {
+            translate:20vw;
+            opacity: 0;
+        }
+    }
+
+    --card-height:400px;
+    @include desktopmax{
+        --card-height:320px;
+    }
+    @include desktop{
+        --card-height:240px;
+    }
+    @include tablet{
+        --card-height:200px;
+    }
+    @include mobile{
+        --card-height:280px;
+    }
 
     &__header{
         padding-top: 150px;
@@ -7,6 +40,12 @@
         justify-content: center;
         align-items: center;
         padding-bottom: 100px;
+        @include desktop{
+            padding-bottom: 80px;
+        }
+        &-label{
+            @include fluid-text(50,36);
+        }
     }
 
     &__list{
@@ -17,23 +56,97 @@
         padding-inline: 100px;
         gap:60px;
         
+        @include tablet{
+            padding-inline: 40px;
+            gap: 40px;
+        }
+        @include mobile{
+            grid-template-columns: repeat(1,1fr);
+        }
     }
 
     &__item{
         
 
         @include square(400px);
+        
         display: flex;
         justify-content: center;
         align-items: center;
         background-image: 0;
-        border: 1px solid white;
+        border: 1px solid #414141;
         border-radius: var(--border-radius);
         box-shadow: var(--shadowBefore);
 
         @include hover{
             box-shadow: var(--shadowAfter);
         }
+
+        @include desktopmax{
+            @include square(320px);
+        }
+        @include desktop{
+            @include square(240px)
+        }
+        @include tablet{
+            @include square(200px)
+        }
+        @include mobile{
+            @include square(280px);
+        }
+
+        &-left{
+            animation-name: fade-left;
+            animation-fill-mode: both;
+            animation-timing-function: linear;
+
+            view-timeline-name: --fade-left;
+            animation-timeline: --fade-left;
+            animation-range: 20% 30%;
+        }
+
+        &-bottom{
+            animation-name: fade-bottom;
+            animation-fill-mode: both;
+            animation-timing-function: linear;
+
+            view-timeline-name: --fade-bottom;
+            animation-timeline: --fade-bottom;
+            animation-range: 20% 40%;
+        }
+
+        &-right{
+            animation-name: fade-right;
+            animation-fill-mode: both;
+            animation-timing-function: linear;
+
+            view-timeline-name: --fade-right;
+            animation-timeline: --fade-right;
+            animation-range: 20% 50%;
+        }
     }
     
+
+    &__card{
+        
+        svg{
+            @include desktopmax{
+                width: calc(var(--card-height)*0.625);
+                height: calc(var(--card-height)*0.625);
+            }
+            @include desktop{
+                width: calc(var(--card-height)*0.625);
+                height: calc(var(--card-height)*0.625);
+            }
+            @include tablet{
+                width: calc(var(--card-height)*0.625);
+                height: calc(var(--card-height)*0.625);
+            }
+            @include mobile{
+                width: calc(var(--card-height)*0.625);
+                height: calc(var(--card-height)*0.625);
+            }
+        }
+        
+    }
 }

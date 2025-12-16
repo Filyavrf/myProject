@@ -883,12 +883,61 @@ h4, .h4 {
   font-size: clamp(16px, 1.6666666667vw, 24px);
 }
 
+.threeriders {
+  --card-height:400px;
+}
+@keyframes fade-left {
+  from {
+    translate: -20vw;
+    opacity: 0;
+  }
+}
+@keyframes fade-bottom {
+  from {
+    translate: 0 20vw;
+    opacity: 0;
+  }
+}
+@keyframes fade-right {
+  from {
+    translate: 20vw;
+    opacity: 0;
+  }
+}
+@media (max-width: 1600px) {
+  .threeriders {
+    --card-height:320px;
+  }
+}
+@media (max-width: 1280px) {
+  .threeriders {
+    --card-height:240px;
+  }
+}
+@media (max-width: 1023px) {
+  .threeriders {
+    --card-height:200px;
+  }
+}
+@media (max-width: 767px) {
+  .threeriders {
+    --card-height:280px;
+  }
+}
 .threeriders__header {
   padding-top: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
   padding-bottom: 100px;
+}
+@media (max-width: 1280px) {
+  .threeriders__header {
+    padding-bottom: 80px;
+  }
+}
+.threeriders__header-label {
+  font-size: clamp(36px, 3.4722222222vw, 50px);
 }
 .threeriders__list {
   display: grid;
@@ -898,6 +947,17 @@ h4, .h4 {
   padding-inline: 100px;
   gap: 60px;
 }
+@media (max-width: 1023px) {
+  .threeriders__list {
+    padding-inline: 40px;
+    gap: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .threeriders__list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 .threeriders__item {
   width: 400px;
   aspect-ratio: 1;
@@ -905,7 +965,7 @@ h4, .h4 {
   justify-content: center;
   align-items: center;
   background-image: 0;
-  border: 1px solid white;
+  border: 1px solid #414141;
   border-radius: var(--border-radius);
   box-shadow: var(--shadowBefore);
 }
@@ -918,6 +978,136 @@ h4, .h4 {
   .threeriders__item:active {
     box-shadow: var(--shadowAfter);
   }
+}
+@media (max-width: 1600px) {
+  .threeriders__item {
+    width: 320px;
+    aspect-ratio: 1;
+  }
+}
+@media (max-width: 1280px) {
+  .threeriders__item {
+    width: 240px;
+    aspect-ratio: 1;
+  }
+}
+@media (max-width: 1023px) {
+  .threeriders__item {
+    width: 200px;
+    aspect-ratio: 1;
+  }
+}
+@media (max-width: 767px) {
+  .threeriders__item {
+    width: 280px;
+    aspect-ratio: 1;
+  }
+}
+.threeriders__item-left {
+  animation-name: fade-left;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+  view-timeline-name: --fade-left;
+  animation-timeline: --fade-left;
+  animation-range: 20% 30%;
+}
+.threeriders__item-bottom {
+  animation-name: fade-bottom;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+  view-timeline-name: --fade-bottom;
+  animation-timeline: --fade-bottom;
+  animation-range: 20% 40%;
+}
+.threeriders__item-right {
+  animation-name: fade-right;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+  view-timeline-name: --fade-right;
+  animation-timeline: --fade-right;
+  animation-range: 20% 50%;
+}
+@media (max-width: 1600px) {
+  .threeriders__card svg {
+    width: calc(var(--card-height) * 0.625);
+    height: calc(var(--card-height) * 0.625);
+  }
+}
+@media (max-width: 1280px) {
+  .threeriders__card svg {
+    width: calc(var(--card-height) * 0.625);
+    height: calc(var(--card-height) * 0.625);
+  }
+}
+@media (max-width: 1023px) {
+  .threeriders__card svg {
+    width: calc(var(--card-height) * 0.625);
+    height: calc(var(--card-height) * 0.625);
+  }
+}
+@media (max-width: 767px) {
+  .threeriders__card svg {
+    width: calc(var(--card-height) * 0.625);
+    height: calc(var(--card-height) * 0.625);
+  }
+}
+
+@keyframes rect-rotate {
+  from {
+    rotate: -360000deg;
+  }
+}
+.react__header {
+  padding-block: 150px 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 40px;
+}
+.react__label {
+  font-size: clamp(34px, 3.4722222222vw, 50px);
+}
+.react__body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  gap: 80px;
+  padding-inline: 200px;
+}
+@media (max-width: 1600px) {
+  .react__body {
+    padding-inline: 100px;
+  }
+}
+@media (max-width: 1023px) {
+  .react__body {
+    gap: 40px;
+    padding-inline: 60px;
+  }
+  .react__body svg {
+    width: 300px;
+    aspect-ratio: 1;
+  }
+}
+@media (max-width: 767px) {
+  .react__body {
+    flex-direction: column;
+    gap: 25px;
+    padding-inline: 40px;
+  }
+}
+.react__body-description {
+  font-size: clamp(18px, 1.9444444444vw, 28px);
+}
+.react__item-rotation {
+  animation-name: rect-rotate;
+  animation-duration: 10000s;
+  animation-iteration-count: infinite;
+}
+
+.balast {
+  height: 15vh;
 }
 
 .header4 {

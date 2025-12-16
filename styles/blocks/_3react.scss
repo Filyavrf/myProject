@@ -1,0 +1,52 @@
+.react{
+    @keyframes rect-rotate{
+        from{
+            rotate:-360000deg;
+        }
+    }
+
+    &__header{
+        padding-block: 150px 80px;
+        @include flex-center;
+        padding-inline: 40px
+    }
+    &__label{
+        @include fluid-text(50,34);
+    }
+
+    &__body{
+        @include flex-center;
+        align-items: center;
+        gap: 80px;
+        padding-inline: 200px;
+        
+        @include desktopmax{
+            padding-inline: 100px
+        }
+        @include tablet{
+            gap:40px;
+            padding-inline: 60px;
+            svg{
+
+                @include square(300px);
+            }
+        }
+        @include mobile{
+            flex-direction: column;
+            gap:25px;
+            padding-inline: 40px
+        }
+
+        &-description{
+            @include fluid-text(28,18);
+        }
+    }
+    &__item{
+        &-rotation{
+            animation-name: rect-rotate;
+            animation-duration: 10000s;
+            animation-iteration-count: infinite;
+
+        }
+    }
+}
