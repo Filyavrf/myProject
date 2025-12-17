@@ -1,0 +1,15 @@
+.header3-3{
+    @include flex-center;
+    padding-top: 80px;
+    
+    &__box{
+
+        background-color:var(--color-yellow);
+        border-radius: 20px;
+    }
+
+    &__label{
+        color: #131313;
+        padding: 10px 30px;
+    }
+}

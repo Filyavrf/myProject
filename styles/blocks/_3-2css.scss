@@ -1,0 +1,61 @@
+.css{
+    padding-top: 140px;
+    
+    @include desktop{
+        padding-top: 50px;
+    }
+
+    &__list{
+        display: grid;
+        
+        grid-template-columns: repeat(2,1fr);
+        padding-inline: 100px;
+        gap: 30px;
+        
+        @include tablet{
+            grid-template-columns: repeat(1,1fr);
+            
+        }
+
+        @include mobile{
+            padding-inline: 40px;
+        }
+    }
+
+    &__item{
+        display: flex;
+        justify-content: center;
+        
+        
+        
+    }
+
+    &__description{
+        height: 100%;
+
+        &-text{
+            font-weight: 600;
+            @include fluid-text(24,16);
+        }
+    }
+
+    &__label{
+        @include fluid-text(40,30);
+        padding-bottom: 20px;
+    }
+
+    &__picture{
+        padding-top: 100px;
+
+        @include flex-center;
+
+        @include desktop{
+            padding-block: 60px;
+        }
+
+        @include tablet{
+            padding: 40px 70px;
+            
+        }
+    }
+}

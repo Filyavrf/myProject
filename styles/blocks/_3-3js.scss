@@ -1,0 +1,32 @@
+.js{
+
+    &__list{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        padding: 100px 40px;
+        align-items: center;
+        justify-items: center;
+        gap: 20px;
+
+        @include desktopmax{
+            grid-template-columns: repeat(2,1fr);
+            gap: 40px;
+        }
+        @include tablet{
+            display: flex;
+            flex-direction: column;
+            padding-top: 60px;
+
+        }
+    }
+
+    &__item{
+        svg{
+            fill:var(--color-yellow);
+        }
+    }
+
+    &__label{
+        padding-bottom: 30px;
+    }
+}

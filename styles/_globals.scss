@@ -24,8 +24,26 @@ body{
 }
 
 .contentbody3-1{
-  
-    
+  color: var(--color-alabasted-grey);
+  background-color: var(--color-shadow-grey); 
+}
+
+.contentbody3-2{
+  /*background-image: linear-gradient(135deg,#674cc9,#70a14f);*/
+  /*background-image: conic-gradient(#674cc9,#70a14f,#ce3556);*/
+  background-image: repeating-linear-gradient(135deg,#ce4b4b,#c58735,#dad051,#4ece59,#2690a3,#3a53c5,#7f45cc);
+  background-attachment: fixed;
+  margin: 0;
+  max-height: 100vh;
+}
+
+.contentbody3-3{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  color: white;
+  background-color: #131313;
 }
 
 .contentbody4{

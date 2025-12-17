@@ -1,0 +1,17 @@
+.header3-2{
+
+    &__box{
+        @include flex-center;
+        padding-top: 10px;
+    }
+
+    &__label{
+        @include fluid-text(70,50);
+        background: linear-gradient(135deg, #f3292f, #2f73f1);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color:transparent;
+        font-weight:bold;
+    }
+
+}
