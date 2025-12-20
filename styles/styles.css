@@ -300,6 +300,7 @@ body {
 .contentbody3 {
   color: var(--color-pink-light);
   background-color: var(--color-dark-2);
+  overflow-x: hidden;
 }
 
 .contentbody3-1 {
@@ -458,6 +459,7 @@ h4, .h4 {
 @media (max-width: 767px) {
   .cards__list {
     padding-top: 20px;
+    padding-inline: 40px;
   }
 }
 .cards__item {
@@ -475,12 +477,14 @@ h4, .h4 {
   .cards__item:hover {
     color: var(--color-blue-grey);
     box-shadow: 1px 1px 5px black;
+    scale: 1.1;
   }
 }
 @media (hover: none) {
   .cards__item:active {
     color: var(--color-blue-grey);
     box-shadow: 1px 1px 5px black;
+    scale: 1.1;
   }
 }
 @media (max-width: 767px) {
@@ -1344,7 +1348,6 @@ h4, .h4 {
   height: 100vh;
   text-align: center;
   background-color: #eee;
-  background-image: url("/images/page-4/cover.png");
   background-position: center;
   background-size: cover;
 }

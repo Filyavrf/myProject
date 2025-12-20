@@ -1,18 +1,18 @@
 let phrases = [
 
-  { text: 'отправить другу смешную фотку', image: '/images/page-5/cat.png' },
+  { text: 'отправить другу смешную фотку', image: '../images/page-5/cat.png' },
 
-  { text: 'посидеть в Telegram', image: '/images/page-5/cat1.png' },
+  { text: 'посидеть в Telegram', image: '../images/page-5/cat1.png' },
 
-  { text: 'посчитать мышей', image: '/images/page-5/cat2.png' },
+  { text: 'посчитать мышей', image: '../images/page-5/cat2.png' },
 
-  { text: 'посмеяться с котиков', image: '/images/page-5/cat3.png' },
+  { text: 'посмеяться с котиков', image: '../images/page-5/cat3.png' },
 
   { text: 'посмотреть видео в YouTube', image: '/images/page-5/cat4.png' },
 
-  { text: 'полистать Reels', image: '/images/page-5/cat5.png' },
+  { text: 'полистать Reels', image: '../images/page-5/cat5.png' },
 
-  { text: 'почитать новости', image: '/images/page-5/cat6.png' },
+  { text: 'почитать новости', image: '../images/page-5/cat6.png' },
 
 ];
 

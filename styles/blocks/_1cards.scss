@@ -8,6 +8,7 @@
         
         @include mobile{
             padding-top: 20px;
+            padding-inline: 40px;
         }
     }
 
@@ -28,6 +29,7 @@
         @include hover{
             color: var(--color-blue-grey);
             box-shadow: 1px 1px 5px black;
+            scale: 1.1;
         }
 
         @include mobile{
