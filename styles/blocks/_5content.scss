@@ -45,11 +45,11 @@
         @include flex-center;
         flex-direction: column;
         padding-block: 30px;
-        font-size: 30px;
+        font-size: 31px;
         font-weight:bolder;
         &-phrase{
             &::after{
-                content: url('/images/page-5/cursor.gif');
+                content: url('../images/page-5/cursor.gif');
             }
         }
     }

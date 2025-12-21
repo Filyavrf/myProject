@@ -1476,11 +1476,11 @@ h4, .h4 {
   align-items: center;
   flex-direction: column;
   padding-block: 30px;
-  font-size: 30px;
+  font-size: 31px;
   font-weight: bolder;
 }
 .content5__description-phrase::after {
-  content: url("/images/page-5/cursor.gif");
+  content: url("../images/page-5/cursor.gif");
 }
 .content5__button {
   height: 80px;

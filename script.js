@@ -8,7 +8,7 @@ let phrases = [
 
   { text: 'посмеяться с котиков', image: '../images/page-5/cat3.png' },
 
-  { text: 'посмотреть видео в YouTube', image: '/images/page-5/cat4.png' },
+  { text: 'посмотреть видео в YouTube', image: '../images/page-5/cat4.png' },
 
   { text: 'полистать Reels', image: '../images/page-5/cat5.png' },
 
