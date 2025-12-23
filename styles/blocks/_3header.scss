@@ -11,5 +11,20 @@
 
     &__label{
         @include fluid-text(64,38);
+        animation-name: opasity;
+        animation-duration: 2s;
+        
+    }
+
+    @keyframes opasity{
+        0%{
+            opacity: 0;
+        }
+        50%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
     }
 }

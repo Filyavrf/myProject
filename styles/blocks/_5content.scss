@@ -45,7 +45,7 @@
         @include flex-center;
         flex-direction: column;
         padding-block: 30px;
-        font-size: 31px;
+        font-size: 30px;
         font-weight:bolder;
         &-phrase{
             &::after{
@@ -76,4 +76,5 @@
             font-size: 26px;
         }
     }
+    
 }
