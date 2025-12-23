@@ -2,6 +2,7 @@
     @include flex-center;
     flex-direction: column;
     flex-grow: 1;
+    height: 70vh;
 
     &__cont{
         @include flex-center;
@@ -26,8 +27,8 @@
         }
 
         @include mobile{
-            width: 500px;
-            height: 360px;
+            width: 90vw;
+            height: 50vh;
         }
     }
     
@@ -37,6 +38,11 @@
         position: absolute;
         object-position: center;
         object-fit: contain;
+        height: 50vh;
+
+        @include mobile{
+            width: 90vw;
+        }
     }
 
         
@@ -51,6 +57,9 @@
             &::after{
                 content: url('../images/page-5/cursor.gif');
             }
+        }
+        @include mobile{
+            padding-top: 0;
         }
     }
 

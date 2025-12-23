@@ -2,7 +2,7 @@
     
     &__inner{
         display: flex;
-        justify-content:right;
+        justify-content:space-between;
         align-items: center;
         margin: 100px 30px 20px 30px;
         background-color: var(--color-grey-light);
@@ -13,6 +13,18 @@
         @include mobile{
             margin-top: 20px;
         }
+    }
+
+    &__contacts{
+        padding-inline: 30px;
+        p{
+            font-weight: bold;
+        }
+    }
+
+    &__soc1als{
+        display: flex;
+        align-items: center
     }
 
     &__list{

@@ -517,7 +517,7 @@ h4, .h4 {
 
 .footer__inner {
   display: flex;
-  justify-content: right;
+  justify-content: space-between;
   align-items: center;
   margin: 100px 30px 20px 30px;
   background-color: var(--color-grey-light);
@@ -529,6 +529,16 @@ h4, .h4 {
   .footer__inner {
     margin-top: 20px;
   }
+}
+.footer__contacts {
+  padding-inline: 30px;
+}
+.footer__contacts p {
+  font-weight: bold;
+}
+.footer__soc1als {
+  display: flex;
+  align-items: center;
 }
 .footer__list {
   display: flex;
@@ -1474,6 +1484,7 @@ h4, .h4 {
   align-items: center;
   flex-direction: column;
   flex-grow: 1;
+  height: 70vh;
 }
 .content5__cont {
   display: flex;
@@ -1504,8 +1515,8 @@ h4, .h4 {
 }
 @media (max-width: 767px) {
   .content5__cont {
-    width: 500px;
-    height: 360px;
+    width: 90vw;
+    height: 50vh;
   }
 }
 .content5__image {
@@ -1514,6 +1525,12 @@ h4, .h4 {
      object-position: center;
   -o-object-fit: contain;
      object-fit: contain;
+  height: 50vh;
+}
+@media (max-width: 767px) {
+  .content5__image {
+    width: 90vw;
+  }
 }
 .content5__description {
   display: flex;
@@ -1526,6 +1543,11 @@ h4, .h4 {
 }
 .content5__description-phrase::after {
   content: url("../images/page-5/cursor.gif");
+}
+@media (max-width: 767px) {
+  .content5__description {
+    padding-top: 0;
+  }
 }
 .content5__button {
   height: 80px;
